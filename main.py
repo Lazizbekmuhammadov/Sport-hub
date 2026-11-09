@@ -132,3 +132,6 @@ def database_test():
         return {"status": "connected", "database": "SPORT HUB"}
     except Exception:
         return {"status": "error", "message": "Database connection failed"}
+@app.get("/database-test")
+def database_test():
+    ...
